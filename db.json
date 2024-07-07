@@ -55,6 +55,13 @@
       "amount": 10000,
       "category": "Salary",
       "date": "2024-07-07"
+    },
+    {
+      "id": "8818",
+      "type": "expense",
+      "amount": 1000,
+      "category": "Petrol",
+      "date": "2024-07-07"
     }
   ]
 }
