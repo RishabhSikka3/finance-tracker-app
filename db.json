@@ -1,0 +1,60 @@
+{
+  "transactions": [
+    {
+      "id": "1",
+      "type": "income",
+      "amount": 1000,
+      "category": "Allowance",
+      "date": "2024-07-05"
+    },
+    {
+      "id": "2",
+      "type": "expense",
+      "amount": 200,
+      "category": "Food",
+      "date": "2024-07-05"
+    },
+    {
+      "id": "daa2",
+      "type": "income",
+      "amount": 20000,
+      "category": "Salary",
+      "date": "2024-07-07"
+    },
+    {
+      "id": "d5a3",
+      "type": "expense",
+      "amount": 5000,
+      "category": "House Rent",
+      "date": "2024-07-07"
+    },
+    {
+      "id": "dcf5",
+      "type": "expense",
+      "amount": 1000,
+      "category": "Entertainment",
+      "date": "2024-07-07"
+    },
+    {
+      "id": "7bdd",
+      "type": "expense",
+      "amount": 300,
+      "category": "Ride Fair",
+      "date": "2024-07-07"
+    },
+    {
+      "id": "1e4e",
+      "type": "expense",
+      "amount": 1500,
+      "category": "Gym and Fitness",
+      "date": "2024-07-07"
+    },
+    {
+      "id": "7eef",
+      "type": "income",
+      "amount": 10000,
+      "category": "Salary",
+      "date": "2024-07-07"
+    }
+  ]
+}
