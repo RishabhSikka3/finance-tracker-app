@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Finance Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://finance-tracker-app-omega.vercel.app/)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Finance Tracker App is a simple web application that helps users track their income and expenses, providing an overview of financial health. Users can add transactions, view transaction history, filter by date range, and get insights into their income and spending through interactive charts.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **API Integration:**
+   - Mock API using JSON Server to store and fetch financial data (income and expenses).
+   
+2. **Components:**
+   - `AddTransaction`: Add new income or expense transactions.
+   - `TransactionList`: Display a list of all transactions.
+   - `Summary`: Display total income, total expenses, and current balance.
+   - `CategoryBreakdown`: Breakdown of expenses by category, displayed as a chart using Chart.js or Recharts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **State Management:**
+   - React hooks for local state management.
+   - Global state managed using Context API or Redux.
 
-### `npm test`
+4. **Styling:**
+   - Styled-components or CSS Modules for component styling.
+   - Fully responsive design to support various screen sizes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+5. **Additional Features:**
+   - Error handling for API calls.
+   - Loading spinner while fetching data.
+   - Filter transactions by date range.
 
-### `npm run build`
+## Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React, Context API / Redux, Chart.js or Recharts
+- **Backend:** JSON Server (mock API)
+- **Styling:** CSS-in-JS (styled-components) or CSS Modules
+- **Deployment:** Vercel
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js and npm installed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/RishabhSikka3/finance-tracker-app.git
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install the dependencies:**
 
-## Learn More
+   npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the mock API using JSON Server:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  npx json-server --watch db.json --port 5000
 
-### Code Splitting
+4. **Start the development server:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   npm run start
 
-### Analyzing the Bundle Size
+5. **Open your browser and visit:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   http://localhost:3000
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
