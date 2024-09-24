@@ -1,23 +1,3 @@
-// import { createAsyncThunk } from "@reduxjs/toolkit";
-// import axios from "axios";
-
-// export const addTransaction = createAsyncThunk(
-//   "transactions/add",
-//   async (transaction, { rejectWithValue }) => {
-//     try {
-//       const response = await axios.post(
-//         "http://localhost:5000/transactions",
-//         transaction
-//       );
-//       return response.data;
-//     } catch (error) {
-//       return rejectWithValue(
-//         error.response ? error.response.data : "Unexpected error"
-//       );
-//     }
-//   }
-// );
-
 // src/redux/actions/index.js
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";

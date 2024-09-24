@@ -1,31 +1,3 @@
-// import { createSlice } from "@reduxjs/toolkit";
-
-// const transactionsSlice = createSlice({
-//   name: "transactions",
-//   initialState: {
-//     items: [],
-//     loading: false,
-//     error: null,
-//   },
-//   reducers: {
-//     transactionsLoading(state) {
-//       state.loading = true;
-//     },
-//     addTransaction(state, action) {
-//       state.items.push(action.payload);
-//       state.loading = false;
-//     },
-//     transactionsError(state, action) {
-//       state.error = action.payload;
-//       state.loading = false;
-//     },
-//   },
-// });
-
-// export const { transactionsLoading, addTransaction, transactionsError } =
-//   transactionsSlice.actions;
-// export default transactionsSlice.reducer;
-
 // src/redux/reducers/transactionsReducer.js
 import { createSlice } from "@reduxjs/toolkit";
 import { fetchTransactions, addTransaction } from "../actions";
@@ -37,9 +9,7 @@ const transactionsSlice = createSlice({
     loading: false,
     error: null,
   },
-  reducers: {
-    // You can place simple state modification actions here if needed
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(fetchTransactions.pending, (state) => {
